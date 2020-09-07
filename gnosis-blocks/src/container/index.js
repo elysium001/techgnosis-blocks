@@ -18,7 +18,6 @@ registerBlockType( 'create-block/gnosis-container-block', {
 	category: 'widgets',
 	icon: 'smiley',
 	supports: {
-		// Removes support for an HTML mode.
 		html: false,
 	},
 	edit: Edit,

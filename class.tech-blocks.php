@@ -24,7 +24,23 @@ class TechGBlocks {
      */
     function techgnosis_block_theme_scripts() {
         wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Raleway:400,300,600', false );
+        wp_enqueue_style( 'owl', TECHGBLOCKS__PLUGIN_URL . '/assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css', false );
+        wp_enqueue_style( 'owl-theme', TECHGBLOCKS__PLUGIN_URL . '/assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css' );
         wp_enqueue_style( 'skeleton', TECHGBLOCKS__PLUGIN_URL . 'assets/Skeleton-2.0.4/css/skeleton.css', array(), '2.0.4' );
+        wp_enqueue_script(
+            'main-tech',
+            plugins_url( 'assets/main.js', __FILE__ ),
+            ['jquery'],
+            '23',
+            true
+        );
+        wp_enqueue_script(
+            'owl',
+            plugins_url( 'assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js', __FILE__ ),
+            ['jquery'],
+            '2',
+            true
+        );
     }
 
     static function create_block_gnosis_container_block_block_init() {

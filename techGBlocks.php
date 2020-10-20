@@ -1,16 +1,16 @@
 <?php
 /**
- * @package TechGnosis-blocks
+ * @package TechGnosis-confetti
  */
 /*
-Plugin Name: TechGnosis-blocks
+Plugin Name: TechGnosis-confetti
 Plugin URI: https://webtechgnosis.com/
-Description: To be used for simple skeleton library and theme templats.
+Description: Provides a simple shortcode for the Confetti-js library.
 Version: 1.0.0
 Author: Techgnosis
 Author URI: https://webtechgnosis.com/
 License: GPLv2 or later
-Text Domain: techgnosis-blocks
+Text Domain: techgnosis-confetti
 */
 
 /*
